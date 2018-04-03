@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./assets/src/scss/index.scss"],"names":[],"mappings":"AAAA,KAAK,eAAe,oBAAoB,YAAY","file":"index.css","sourcesContent":["body{background:red;display:-ms-flexbox;display:flex}\n"],"sourceRoot":""}
