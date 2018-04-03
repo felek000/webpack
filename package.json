@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "webpackConf",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/felek000/webpack/issues"
   },
-  "homepage": "https://github.com/felek000/webpack#readme"
+  "homepage": "https://github.com/felek000/webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.4.1"
+  }
 }
