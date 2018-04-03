@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p",
+    "watch": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,15 @@
   },
   "homepage": "https://github.com/felek000/webpack#readme",
   "devDependencies": {
-    "webpack": "^4.4.1"
-  }
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "v4.0.0-alpha.0",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {}
 }
