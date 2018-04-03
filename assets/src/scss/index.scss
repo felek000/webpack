@@ -1,5 +1,6 @@
-$color:red;
+@import "partials/vars";
 body{
   background: $color;
   display: flex;
+  background-image: url("http://lorempixel.com/400/200");
 }

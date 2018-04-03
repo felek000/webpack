@@ -13,12 +13,13 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   entry: {
-    'index.css': [
+    'css/index.css': [
       entryDir + '/scss/index.scss',
     ],
   },
   output: {
     path: buildDir,
+    // publicPath: 'css/',
     filename: '[name]',
   },
   watch: true,
@@ -31,27 +32,16 @@ module.exports = {
           use: [
             {
               loader: 'css-loader', options: {
-                sourceMap: true,
                 url: false,
               },
             },
             'postcss-loader',
             {
               loader: 'sass-loader', options: {
-                sourceMap: true,
               },
             }],
-          // use style-loader in development
           fallback: 'style-loader',
         }),
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file-loader?name=img/[name].[ext]',
-      },
-      {
-        test: /\.(eot|svg|ttf|woff)$/i,
-        loader: 'file-loader?name=fonts/[name].[ext]',
       },
     ],
   },
