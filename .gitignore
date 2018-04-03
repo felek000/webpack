@@ -2,4 +2,4 @@ package-lock.json
 node_modules/
 .idea/
 assets/dist/
-assets/src/scss
+assets/src/scss/
