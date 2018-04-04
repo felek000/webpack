@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "watch": "webpack -w"
+    "build": "webpack -p --mode production",
+    "watch": "webpack -w --mode development"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/felek000/webpack#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-loader": "^8.0.0-beta.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "v4.0.0-alpha.0",
     "file-loader": "^1.1.11",
@@ -28,5 +35,9 @@
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.44",
+    "babel-runtime": "^6.26.0",
+    "lodash": "^4.17.5"
+  }
 }
