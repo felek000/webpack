@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "watch": "webpack -w"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "clean-webpack-plugin": "^0.1.19"
   },
   "dependencies": {}
 }
