@@ -1,3 +1,6 @@
+button {
+  background: blue; }
+
 body {
   background: blue;
   display: -ms-flexbox;
